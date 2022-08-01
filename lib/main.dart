@@ -1,4 +1,5 @@
-import 'package:firebase_app/home_page.dart';
+import 'package:firebase_app/pages/cadastro_page.dart';
+import 'package:firebase_app/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,10 +11,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
-      home: HomePage(),
+      initialRoute: '/login',
+      routes: {
+        '/cadastro': (context) => const CadastroPage(),
+        '/login': (context) => const LoginPage(),
+      },
     );
   }
 }
