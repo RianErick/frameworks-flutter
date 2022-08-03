@@ -8,8 +8,11 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: [
+          IconButton(onPressed: (() {}), icon: Icon(Icons.access_alarm))
+        ],
         backgroundColor: const Color.fromARGB(255, 5, 0, 8),
-        title: const Text("Folha De Pagamento", style: TextStyle(fontSize: 20)),
+        title: const Text("Ponto Eletronico", style: TextStyle(fontSize: 20)),
         centerTitle: true,
       ),
       backgroundColor: const Color.fromARGB(255, 249, 249, 249),
@@ -55,7 +58,7 @@ class LoginPage extends StatelessWidget {
                 onPressed: () {},
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Center(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -70,7 +73,7 @@ class LoginPage extends StatelessWidget {
                           builder: (context) => const CadastroPage()));
                     },
                     child: const Text(
-                      "Clique Aqui",
+                      "Clique Aqui !",
                       style: TextStyle(color: Colors.blue),
                     ),
                   ),

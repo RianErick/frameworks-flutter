@@ -17,7 +17,7 @@ class CadastroPage extends StatelessWidget {
                 "Crie Sua Conta Gratuita",
                 style: TextStyle(
                   fontStyle: FontStyle.normal,
-                  fontSize: 30,
+                  fontSize: 25,
                 ),
               ),
               const SizedBox(

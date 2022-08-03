@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "323103562720",
+    "project_id": "relogio-virtual",
+    "storage_bucket": "relogio-virtual.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323103562720:android:6e914b980b5454e1186985",
+        "android_client_info": {
+          "package_name": "com.example.firebase_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323103562720-dmmd86l35aoj6u8p6r4u6g515tbrq780.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOiI56xV1qvzbdR1Zzn_r7o1j4V067TI0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "323103562720-dmmd86l35aoj6u8p6r4u6g515tbrq780.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
