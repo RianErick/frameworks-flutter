@@ -1,4 +1,5 @@
 import 'package:firebase_app/pages/cadastro_page.dart';
+import 'package:firebase_app/pages/principal_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -9,7 +10,7 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         actions: [
-          IconButton(onPressed: (() {}), icon: Icon(Icons.access_alarm))
+          IconButton(onPressed: (() {}), icon: const Icon(Icons.access_alarm))
         ],
         backgroundColor: const Color.fromARGB(255, 5, 0, 8),
         title: const Text("Ponto Eletronico", style: TextStyle(fontSize: 20)),
@@ -50,12 +51,15 @@ class LoginPage extends StatelessWidget {
               height: 45,
               width: 200,
               child: TextButton(
-                style: ButtonStyle(),
+                style: const ButtonStyle(),
                 child: const Text("Entrar",
                     style: TextStyle(
                       color: Color.fromARGB(255, 255, 254, 254),
                     )),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      builder: (context) => const PrincipalPage()));
+                },
               ),
             ),
             const SizedBox(height: 10),

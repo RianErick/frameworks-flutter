@@ -48,7 +48,7 @@ class CadastroPage extends StatelessWidget {
               const SizedBox(height: 10),
               ElevatedButton(
                   onPressed: (() {}), child: const Text("Criar Conta")),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Container(
                 height: 50,
                 width: 280,
@@ -57,7 +57,7 @@ class CadastroPage extends StatelessWidget {
                     Navigator.of(context).pushReplacement(MaterialPageRoute(
                         builder: (context) => const LoginPage()));
                   },
-                  child: Text(" Já Tenho Uma Conta"),
+                  child: const Text(" Já Tenho Uma Conta"),
                 ),
               )
             ],

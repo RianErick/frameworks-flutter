@@ -5,6 +5,40 @@ class PrincipalPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SingleChildScrollView(
+          child: Column(
+        children: [
+          Container(
+            height: 300,
+            width: 300,
+            color: Colors.purple,
+          ),
+          Container(
+            height: 300,
+            width: 300,
+            color: Colors.green,
+          ),
+          Container(
+            height: 300,
+            width: 300,
+            color: Colors.blue,
+          ),
+          Container(
+            height: 300,
+            width: 300,
+            color: Colors.red,
+          ),
+        ],
+      )),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+              icon: Icon(Icons.ac_unit_rounded), label: "Horas"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.abc_outlined), label: "Teste"),
+        ],
+      ),
+    );
   }
 }
