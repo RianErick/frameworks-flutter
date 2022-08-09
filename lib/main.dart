@@ -1,6 +1,7 @@
 import 'package:firebase_app/pages/cadastro_page.dart';
 import 'package:firebase_app/pages/login_page.dart';
 import 'package:firebase_app/pages/principal_page.dart';
+import 'package:firebase_app/pages/splash.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,11 +16,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
-      initialRoute: '/login',
+      initialRoute: '/splash',
       routes: {
         '/cadastro': (context) => const CadastroPage(),
         '/login': (context) => const LoginPage(),
-        '/principal': ((context) => const PrincipalPage())
+        '/principal': ((context) => const PrincipalPage()),
+        '/splash': (context) => Splash(),
       },
     );
   }
