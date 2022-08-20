@@ -1,3 +1,6 @@
+import 'dart:ui';
+
+import 'package:firebase_app/widgets/container_custtom_widget.dart';
 import 'package:flutter/material.dart';
 
 class PrincipalPage extends StatelessWidget {
@@ -5,39 +8,38 @@ class PrincipalPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
+        drawer: Drawer(),
+        appBar: AppBar(actions: [
+          Icon(
+            Icons.search,
+          ),
+        ]),
+        body: SingleChildScrollView(
           child: Column(
-        children: [
-          Container(
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
-            color: Colors.purple,
+            children: [
+              ContainerCusttomWidget(titleWidget: "Java"),
+              ContainerCusttomWidget(titleWidget: "Python"),
+              ContainerCusttomWidget(titleWidget: "C"),
+              ContainerCusttomWidget(titleWidget: "C++"),
+              ContainerCusttomWidget(titleWidget: "JavaScript"),
+              ContainerCusttomWidget(titleWidget: "PHP"),
+              ContainerCusttomWidget(titleWidget: "Golang"),
+              ContainerCusttomWidget(titleWidget: "C Sharp"),
+              ContainerCusttomWidget(titleWidget: "Assembly"),
+              ContainerCusttomWidget(titleWidget: "Cobol"),
+              ContainerCusttomWidget(titleWidget: "Pascal"),
+              ContainerCusttomWidget(titleWidget: "Lua"),
+              ContainerCusttomWidget(titleWidget: "Ruby"),
+              ContainerCusttomWidget(titleWidget: "Kotlin"),
+              ContainerCusttomWidget(titleWidget: "Dart"),
+              ContainerCusttomWidget(titleWidget: "Perl"),
+              ContainerCusttomWidget(titleWidget: "Swift"),
+              ContainerCusttomWidget(titleWidget: "Scala"),
+              ContainerCusttomWidget(titleWidget: "TypeScript"),
+              ContainerCusttomWidget(titleWidget: "Elixir"),
+              ContainerCusttomWidget(titleWidget: "Linguagem R")
+            ],
           ),
-          Container(
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
-            color: Colors.green,
-          ),
-          Container(
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
-            color: Colors.blue,
-          ),
-          Container(
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
-            color: Colors.red,
-          ),
-        ],
-      )),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-              icon: Icon(Icons.ac_unit_rounded), label: "Horas"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.abc_outlined), label: "Teste"),
-        ],
-      ),
-    );
+        ));
   }
 }

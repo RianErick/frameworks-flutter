@@ -13,7 +13,8 @@ class LoginPage extends StatelessWidget {
           IconButton(onPressed: (() {}), icon: const Icon(Icons.access_alarm))
         ],
         backgroundColor: const Color.fromARGB(255, 5, 0, 8),
-        title: const Text("Ponto Eletronico", style: TextStyle(fontSize: 20)),
+        title: const Text("Linguagens De Progamação",
+            style: TextStyle(fontSize: 20)),
         centerTitle: true,
       ),
       backgroundColor: const Color.fromARGB(255, 249, 249, 249),
