@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         '/cadastro': (context) => const CadastroPage(),
         '/login': (context) => const LoginPage(),
         '/principal': ((context) => const PrincipalPage()),
-        '/splash': (context) => Splash(),
+        '/splash': (context) => const Splash(),
       },
     );
   }
