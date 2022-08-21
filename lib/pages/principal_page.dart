@@ -1,6 +1,4 @@
-import 'dart:ui';
-
-import 'package:firebase_app/widgets/container_custtom_widget.dart';
+import 'package:firebase_app/widgets/linguagens.dart';
 import 'package:flutter/material.dart';
 
 class PrincipalPage extends StatelessWidget {
@@ -8,38 +6,22 @@ class PrincipalPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        drawer: Drawer(),
-        appBar: AppBar(actions: [
+        drawer: const Drawer(),
+        appBar: AppBar(actions: const [
           Icon(
             Icons.search,
           ),
         ]),
-        body: SingleChildScrollView(
-          child: Column(
-            children: [
-              ContainerCusttomWidget(titleWidget: "Java"),
-              ContainerCusttomWidget(titleWidget: "Python"),
-              ContainerCusttomWidget(titleWidget: "C"),
-              ContainerCusttomWidget(titleWidget: "C++"),
-              ContainerCusttomWidget(titleWidget: "JavaScript"),
-              ContainerCusttomWidget(titleWidget: "PHP"),
-              ContainerCusttomWidget(titleWidget: "Golang"),
-              ContainerCusttomWidget(titleWidget: "C Sharp"),
-              ContainerCusttomWidget(titleWidget: "Assembly"),
-              ContainerCusttomWidget(titleWidget: "Cobol"),
-              ContainerCusttomWidget(titleWidget: "Pascal"),
-              ContainerCusttomWidget(titleWidget: "Lua"),
-              ContainerCusttomWidget(titleWidget: "Ruby"),
-              ContainerCusttomWidget(titleWidget: "Kotlin"),
-              ContainerCusttomWidget(titleWidget: "Dart"),
-              ContainerCusttomWidget(titleWidget: "Perl"),
-              ContainerCusttomWidget(titleWidget: "Swift"),
-              ContainerCusttomWidget(titleWidget: "Scala"),
-              ContainerCusttomWidget(titleWidget: "TypeScript"),
-              ContainerCusttomWidget(titleWidget: "Elixir"),
-              ContainerCusttomWidget(titleWidget: "Linguagem R")
-            ],
-          ),
+        body: Column(
+          children: [
+            Expanded(
+              child: ListView.builder(
+                itemBuilder: (context, index) =>
+                    ListaLinguagens.linguagens[index],
+                itemCount: ListaLinguagens.linguagens.length,
+              ),
+            )
+          ],
         ));
   }
 }

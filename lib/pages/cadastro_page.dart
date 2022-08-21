@@ -49,7 +49,7 @@ class CadastroPage extends StatelessWidget {
               ElevatedButton(
                   onPressed: (() {}), child: const Text("Criar Conta")),
               const SizedBox(height: 10),
-              Container(
+              SizedBox(
                 height: 50,
                 width: 280,
                 child: TextButton(
