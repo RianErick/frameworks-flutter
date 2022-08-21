@@ -2,6 +2,7 @@ import 'package:firebase_app/widgets/button_custtom_widget.dart';
 
 class ListaLinguagens {
   static final List linguagens = [
+    const ButtomCusttomWidget(titleWidget: "Java"),
     const ButtomCusttomWidget(titleWidget: "Python"),
     const ButtomCusttomWidget(titleWidget: "C"),
     const ButtomCusttomWidget(titleWidget: "C++"),

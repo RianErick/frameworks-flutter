@@ -1,5 +1,5 @@
 import 'package:firebase_app/pages/cadastro_page.dart';
-import 'package:firebase_app/pages/principal_page.dart';
+import 'package:firebase_app/pages/linguagens_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
