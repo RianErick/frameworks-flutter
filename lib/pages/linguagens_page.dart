@@ -20,10 +20,9 @@ class PrincipalPage extends StatelessWidget {
         children: [
           Expanded(
             child: ListView.builder(
-              itemBuilder: (context, index) =>
-                  ListaLinguagens.linguagens[index],
-              itemCount: ListaLinguagens.linguagens.length,
-            ),
+                itemBuilder: (context, index) =>
+                    listaLinguagens(context).linguagens[index],
+                itemCount: listaLinguagens(context)),
           ),
         ],
       ),

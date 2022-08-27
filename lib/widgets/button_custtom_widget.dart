@@ -6,7 +6,8 @@ class ButtomCusttomWidget extends StatelessWidget {
       : super(key: key);
 
   final String titleWidget;
-  final Function? onPressed;
+  final VoidCallback? onPressed;
+  //Function()? onPressed;
 
   @override
   Widget build(BuildContext context) {
